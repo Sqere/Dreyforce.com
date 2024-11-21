@@ -1,0 +1,180 @@
+* {
+  scrollbar-width: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background: linear-gradient(rgb(219, 119, 52) 21%, gray, skyblue, lightblue);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/*Encabezado*/
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 100px;
+  border-radius: 5px;
+}
+ul {
+  display: flex;
+  margin-top: 15px;
+  list-style: none;
+}
+ul a {
+  text-decoration: none;
+}
+.Secciones {
+  list-style: none;
+  background-color: rgb(92, 88, 88);
+  color: white;
+  margin-top: 20px;
+  margin-right: 50px;
+  font-size: 17px;
+  padding: 3px 5px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 2px;
+  border: 1px solid black;
+  box-shadow: 2px 0px 5px;
+}
+.Secciones:hover {
+  background-color: rgba(92, 88, 88, 0.767);
+  box-shadow: none;
+}
+#Lugar_Actual {
+  background-color: white;
+  color: black;
+}
+.Lugar_Actual:hover {
+  background-color: rgba(255, 255, 255, 0.815);
+  text-decoration: none;
+}
+.logo {
+  width: 150px;
+  height: 150px;
+}
+.Red {
+  margin-right: 300px;
+  display: flex;
+}
+.Red li {
+  list-style: none;
+  margin-right: 50px;
+}
+.Red-social {
+  width: 40px;
+  height: 40px;
+}
+#Twitter {
+  width: 60px;
+  height: 45px;
+}
+
+/*Página de Inicio*/
+/*Titular*/
+
+.texto_inicio {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid black;
+  border-radius: 100%;
+  margin: 0px 300px;
+  margin-top: 50px;
+  background-color: white;
+}
+h1 {
+  font-size: 25px;
+  margin: 0;
+  margin-top: 20px;
+  text-shadow: 1px 0px 4px black;
+}
+h2 {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/*Tenis de Inicio*/
+
+.nombretenisinicio {
+  font-weight: 900;
+  transform: rotate(-30deg);
+  margin-top: 100px;
+  position: relative;
+  right: 100px;
+}
+#DB17 {
+  position: relative;
+  top: 25px;
+}
+.SeccionInicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.Tenis_Azul {
+  display: flex;
+  align-items: center;
+}
+section ul {
+  justify-content: space-around;
+  margin-right: 100px;
+  position: relative;
+  bottom: 30px;
+}
+.CompraInicio {
+  color: white;
+  background-color: rgb(47, 47, 58);
+  font-size: 17px;
+  padding: 3px 5px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 2px;
+  border: 1px solid black;
+  box-shadow: 2px 0px 5px black;
+  justify-content: space-around;
+}
+.CompraInicio:hover {
+  background-color: rgb(34, 34, 43);
+  box-shadow: none;
+}
+#CompraDB21 {
+  position: relative;
+  right: 70px;
+  bottom: 10px;
+}
+
+/*Página de Sobre Nosotros*/
+
+.Nosotros {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5px;
+}
+.Nosotrostexto {
+  width: 60%;
+}
+
+/*Tenis de Sobre Nosotros*/
+.Arcoiris h3 {
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: -35px;
+}
+.Arcoiris ul {
+  position: relative;
+  left: 30px;
+}
+.DescuentoNosotros {
+  position: relative;
+  right: 70px;
+}
+.DescuentoNosotros h4 {
+  color: white;
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 50%;
+}
