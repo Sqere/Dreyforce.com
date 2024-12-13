@@ -13,7 +13,7 @@
     />
     <link rel="icon" href="Logo Dreyforce.ico" />
   </head>
-  <body>
+  <body onclick="PlayAudio()">
     <header>
       <div class="menu">
         <img src="Logo Dreyforce.png" class="logo" />
@@ -34,7 +34,7 @@
             <a href="Index.html"
               ><li id="Lugar_Actual" class="Secciones">Inicio</li></a
             >
-            <a href="Compra.html"><li class="Secciones">Compra</li></a>
+            <a href="Compra.html"><li class="Secciones">Productos</li></a>
             <a href="Nosotros.html"><li class="Secciones">Nosotros</li></a>
             <a href="Ayuda.html"><li class="Secciones">Ayuda</li></a>
           </ul>
@@ -46,22 +46,34 @@
       <h2>Esto es Dreyforce, y es tu lugar</h2>
     </div>
 
-    <section>
+    <section class="Seccion1">
       <div class="SeccionInicio">
         <div class="Tenis_Azul">
-          <img src="Tenis Azules 1.png" width="300" height="310" />
+          <img src="Imagenes/Tenis Azules 1.png" width="300" height="310" />
           <h3 class="nombretenisinicio">Dreyforce Blue 21</h3>
+          <h4 class="nombretenisinicio precio" id="preciopreciso">RD$1,200</h4>
         </div>
 
         <div class="Tenis_Azul">
-          <img src="Tenis Azules 2.png" width="300" height="300" />
+          <img src="Imagenes/Tenis Azules 2.png" width="300" height="300" />
           <h3 id="DB17" class="nombretenisinicio">Dreyforce Blue 17</h3>
+          <h4 class="nombretenisinicio precio">RD$1,500</h4>
         </div>
       </div>
       <ul>
-        <a href="#"><li class="CompraInicio" id="CompraDB21">Comprar</li></a>
-        <a href="#"><li class="CompraInicio">Comprar</li></a>
+        <a href="Formulario de Compra.html" target="_blank"><li class="CompraInicio" id="CompraDB21">Comprar</li></a>
+        <a href="Formulario de Compra.html" target="_blank"><li class="CompraInicio">Comprar</li></a>
       </ul>
     </section>
+
+    <audio id="RADIKAL" loop>
+      <source src="Musica/y2mate.com - REDIMI2  RADIKAL 60 Video Oficial.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+      function PlayAudio(){
+        document.getElementById("RADIKAL").play()
+      }
+    </script>
   </body>
 </html>
