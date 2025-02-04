@@ -12,13 +12,3 @@ document.addEventListener("keyup", e=>{
     }
   
   })
-
-  function Confirmar(){
-    var respuesta = confirm("¿Desea enviar este formulario?");
-    if (respuesta == true) {
-      return true;
-    }
-    else {
-      return false;
-    }
-  }
