@@ -133,7 +133,7 @@ ul a {
   display: flex;
   align-items: center;
 }
-section ul {
+section .lista-compra-inicio {
   justify-content: space-around;
   margin-right: 100px;
   position: relative;
@@ -206,9 +206,28 @@ section ul {
   left: 20px;
   margin-top: 30px;
 }
+/*Valores de Nosotros*/
+.contenedor-valores{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.valores{
+  border: 2px solid black;
+  border-radius: 4%;
+  background-color: lightgrey;
+  width: 40%;
+  margin-top: 30px;
+}
+.valores p{
+  text-align: center;
+}
+.titulo-valores{
+  text-align: center;
+}
+
 /*Página de Ayuda*/
 /*Sección de Ayuda*/
-
 .Contenedor-Ayuda {
   display: flex;
   justify-content: space-between;
