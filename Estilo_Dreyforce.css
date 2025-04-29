@@ -648,3 +648,186 @@ span {
     font-size: 22px;
   }
 }
+
+/*COMPRA*/
+@media screen and (max-width: 768px) {
+  .Contenedor-Producto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Productos {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .Productos h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .Productos input {
+    width: 90%;
+    font-size: 16px;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .contenedor_compra {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor_productos {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .CompraPBT {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .NombreP,
+  .PrecioP {
+    position: static;
+    margin-top: 5px;
+  }
+
+  .contenedor_productos img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/*AYUDA*/
+@media (max-width: 768px) {
+  .Contenedor-Ayuda {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ajustar la sección de Ayuda */
+  .Ayuda {
+    width: 100%;
+    max-width: 320px; /* Aseguramos que no se salga del contorno */
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  /* Ajuste del formulario */
+  .Formulario1 {
+    width: 95%; /* El formulario tomará el 95% del contenedor */
+    margin-left: 0;
+    padding: 15px; /* Añadimos algo de padding */
+  }
+
+  /* Ajuste de los inputs y textarea */
+  input,
+  textarea {
+    width: 100%; /* Para que no sobresalgan */
+    padding: 8px;
+    box-sizing: border-box; /* Para que el padding no haga que sobresalgan */
+  }
+
+  /* Ajuste del botón de enviar */
+  button[type="submit"] {
+    width: 100%; /* El botón también tomará el 100% del formulario */
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Aseguramos que la sección Ayuda tenga el 100% de ancho */
+  .Ayuda {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* El formulario toma el 100% */
+  .Formulario1 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Los inputs y textarea también toman el 100% de ancho */
+  input,
+  textarea {
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  /* El botón toma el 100% de ancho */
+  button[type="submit"] {
+    width: 80%;
+    padding: 6px 0;
+    position: relative;
+    left: 35px;
+  }
+}
+
+/* QUIERES SABER SOBRE...?*/
+@media (max-width: 768px) {
+  .Ayudainfo {
+    width: 95%;
+    margin: 8px auto;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 0.75rem;
+  }
+
+  .Ayudainfo h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+
+  .Ayudainfo h4 {
+    font-size: 0.9rem;
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+
+  .Ayudainfo p,
+  .Ayudainfo li {
+    font-size: 0.75rem;
+    line-height: 1.3;
+  }
+
+  .Contenedor-Info-Principal h1 {
+    font-size: 1.2rem;
+    padding: 0 8px;
+  }
+}
+
+/*FORMULARIO DE COMPRA*/
+@media (max-width: 768px) {
+  .Contenedor-Formulario2 {
+    margin: 0 auto;
+    padding: 10px;
+    width: 90%;
+    box-sizing: border-box;
+  }
+
+  .Formulario2 {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .Formulario2 input {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    box-sizing: border-box;
+  }
+
+  form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    position: static;
+    display: block;
+  }
+}
+
