@@ -149,6 +149,8 @@ section .lista-compra-inicio {
   border: 1px solid black;
   box-shadow: 2px 0px 5px black;
   justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
 }
 .CompraInicio:hover {
   background-color: rgb(34, 34, 43);
@@ -427,4 +429,222 @@ text-align: center;
 }
 span {
   font-weight: bold;
+}
+
+/*A partir de aqui comenzamos a trabajar la pagina mas alla de PC, transformando la pagina a un diseño acto para moviles*/
+
+/*Inicio*/
+@media (max-width: 767px) {
+  /* Ajustes generales */
+  body {
+    overflow-x: hidden; /* Evita desplazamiento lateral */
+  }
+
+  /* Encabezado (menu) */
+  .menu {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+
+  nav ul.Navegacion {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .Red {
+    margin-right: 0;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+
+  .Red li {
+    margin-right: 20px;
+  }
+
+  /* Secciones de navegación */
+  .Secciones {
+    margin: 10px 0;
+    margin-right: 0;
+    font-size: 16px;
+    width: 80%;
+    text-align: center;
+  }
+
+  #Lugar_Actual {
+    background-color: white;
+    color: black;
+  }
+
+  /* Texto de inicio */
+  .texto_inicio {
+    margin: 20px;
+    border-radius: 20px;
+  }
+
+  .texto_inicio h1 {
+    font-size: 20px;
+  }
+
+  .texto_inicio h2 {
+    font-size: 18px;
+  }
+
+  /* Sección de productos */
+  .SeccionInicio {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Tenis_Azul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: center; /* Para centrar el contenido */
+  }
+
+  .nombretenisinicio {
+    transform: rotate(0deg);
+    margin-top: 20px;
+    right: 0;
+    font-size: 18px;
+  }
+
+  .precio {
+    position: static;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  #DB17, #preciopreciso {
+    position: static;
+  }
+
+  /* Botones de compra */
+  section .lista-compra-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Tenis_Azul a {
+    display: block; /* Hace que el enlace (botón) esté en su propia línea */
+    width: 100%; /* Asegura que el botón ocupe todo el ancho disponible */
+    text-align: center;
+    margin-top: 10px; /* Separación entre el producto y el botón */
+  }
+
+  .CompraInicio {
+    font-size: 16px;
+    background-color: rgb(47, 47, 58);
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    box-shadow: 2px 0px 5px black;
+  }
+
+  .CompraInicio:hover {
+    background-color: rgb(34, 34, 43);
+  }
+
+  /* Ajuste para el botón de Dreyforce Blue 21 */
+  #CompraDB21 {
+    margin-top: -470px;
+    margin-left: 140px;
+  }
+}
+
+/*Nosotros*/
+@media (max-width: 768px) {
+  /* Ajuste del contenedor principal */
+  .Nosotros {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .Nosotrostexto {
+    width: 90%;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  /* Imagen Arcoiris */
+  .Arcoiris img {
+    width: 80%;
+    height: auto;
+  }
+
+  .Arcoiris h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .Arcoiris ul {
+    left: 0;
+    text-align: center;
+    padding: 0;
+  }
+
+  .Arcoiris .CompraInicio {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .CompraInicio{
+    margin-left: 120px;
+  }
+
+  /* Tenis Tricolor */
+  .TenisTri {
+    position: static;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ConjuntoTri {
+    text-align: center;
+  }
+
+  .TenisRD {
+    width: 70%;
+    height: auto;
+  }
+
+  #BtRD {
+    left: 0;
+    margin-top: 10px;
+  }
+
+  /* Valores (Misión, Visión, etc.) */
+  .contenedor-valores {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .valores {
+    width: 85%;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+
+  .valores p, .valores ol, .valores ul {
+    font-size: 16px;
+  }
+
+  .titulo-valores {
+    font-size: 22px;
+  }
 }

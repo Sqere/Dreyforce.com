@@ -1,0 +1,160 @@
+<?php
+
+    $servidor = "localhost";
+    $usuario = "root";
+    $clave = "";
+    $baseDeDatos = "formularios";
+
+    $enlace = mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compra - Dreyforce - Step Hard</title>
+    <link rel="stylesheet" href="Estilo_Dreyforce.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="Logo Dreyforce.ico" />
+    <script src="Buscador.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <img src="Logo Dreyforce.png" class="logo" />
+        <nav>
+          <ul class="Navegacion">
+            <ul class="Red">
+              <a href="https://www.instagram.com" target="_blank"
+                ><li><img src="Instagram.png" class="Red-social" /></li
+              ></a>
+              <a href="https://www.facebook.com" target="_blank"
+                ><li><img src="Facebook.png" class="Red-social" /></li
+              ></a>
+              <a href="https://www.twitter.com" target="_blank"
+                ><li>
+                  <img src="Twitter.png" class="Red-social" id="Twitter" /></li
+              ></a>
+            </ul>
+            <a href="Index.html"><li class="Secciones">Inicio</li></a>
+            <a href="Compra.html"
+              ><li class="Secciones" id="Lugar_Actual">Productos</li></a
+            >
+            <a href="Nosotros.html"><li class="Secciones">Nosotros</li></a>
+            <a href="Ayuda.html"><li class="Secciones">Ayuda</li></a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="Contenedor-Formulario2">
+      <form action="index.php" method="POST" class="Formulario2">
+        <legend>Formulario de Compra</legend>
+        <label for="Nombre">Nombre</label>
+        <input type="text" required name="nombre" placeholder="Ingrese aquí su Nombre" />
+
+        <br />
+
+        <label for="Apellido">Apellido</label>
+        <input
+          type="text"
+          required name="apellido"
+          placeholder="Ingrese aquí su Apellido"
+        />
+
+        <br />
+
+        <label for="Correo">Correo Electrónico</label>
+        <input
+          type="email"
+          required name="correo"
+          placeholder="Ingrese aquí su Correo Electrónico"
+        />
+
+        <br />
+
+        <label for="Numero Telefónico">Teléfono</label>
+        <input
+          type="text"
+          name="teléfono"
+          placeholder="Ingrese aquí su Número de Teléfono"
+        />
+
+        <br />
+
+        <label for="Mensaje">Tarjeta</label>
+        <input
+          type="text"
+          required name="tarjeta"
+          placeholder="Ingrese el número de su tarjeta"
+        />
+
+        <br />
+
+        <label for="CVV">CVV</label>
+        <input
+          type="text"
+          required name="cvv"
+          placeholder="Ingrese aquí el CVV de su tarjeta"
+        />
+
+        <br />
+
+        <label for="Courrier">Courrier</label>
+        <input
+          type="text"
+           required name="courrier"
+          placeholder="Ingrese aquí su dirección Courrier"
+        />
+
+        <br />
+
+        <label for="Código Postal">Código Postal</label>
+        <input
+          type="text"
+          required name="código_postal"
+          placeholder="Ingrese aquí su Código Postal"
+        />
+
+        <br />
+
+        <label for="Talla">Talla</label>
+        <input
+          type="text"
+          required name="talla"
+          placeholder="Ingrese aquí la Talla del zapato que desea"
+        />
+
+        <br /><br />
+
+        <button type="submit" name="enviar">Confirmar</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<?php
+
+    if(isset($_POST['enviar'])) {
+
+        $nombre = $_POST['nombre'];
+        $apellido = $_POST['apellido'];
+        $correo = $_POST['correo'];
+        $teléfono = $_POST['teléfono'];
+        $tarjeta = $_POST['tarjeta'];
+        $cvv = $_POST['cvv'];
+        $courrier = $_POST['courrier'];
+        $código_postal = $_POST['código_postal'];
+        $talla = $_POST['talla'];
+
+        $insertarDatos = "INSERT INTO compra VALUES('', '$nombre', '$apellido', '$correo', '$teléfono', '$tarjeta', '$cvv', '$courrier', '$código_postal', '$talla')";
+
+        $ejecutarInsertar = mysqli_query ($enlace, $insertarDatos);
+    }
+
+?>
