@@ -45,14 +45,14 @@
       <form action="https://formsubmit.co/849c47d10fbadfb9082a67885f02dd67" method="POST" class="Formulario2">
         <legend>Formulario de Compra</legend>
         <label for="Nombre">Nombre</label>
-        <input type="text" name="nombre" placeholder="Ingrese aquí su Nombre" />
+        <input type="text" required name="nombre" placeholder="Ingrese aquí su Nombre" />
 
         <br />
 
         <label for="Apellido">Apellido</label>
         <input
           type="text"
-          name="apellido"
+          required name="apellido"
           placeholder="Ingrese aquí su Apellido"
         />
 
@@ -61,7 +61,7 @@
         <label for="Correo">Correo Electrónico</label>
         <input
           type="email"
-          name="correo"
+          required name="correo"
           placeholder="Ingrese aquí su Correo Electrónico"
         />
 
@@ -79,7 +79,7 @@
         <label for="Mensaje">Tarjeta</label>
         <input
           type="text"
-          name="tarjeta"
+          required name="tarjeta"
           placeholder="Ingrese el número de su tarjeta"
         />
 
@@ -88,7 +88,7 @@
         <label for="CVV">CVV</label>
         <input
           type="text"
-          name="cvv"
+          required name="cvv"
           placeholder="Ingrese aquí el CVV de su tarjeta"
         />
 
@@ -97,7 +97,7 @@
         <label for="Courrier">Courrier</label>
         <input
           type="text"
-          name="courrier"
+           required name="courrier"
           placeholder="Ingrese aquí su dirección Courrier"
         />
 
@@ -106,7 +106,7 @@
         <label for="Código Postal">Código Postal</label>
         <input
           type="text"
-          name="código_postal"
+          required name="código_postal"
           placeholder="Ingrese aquí su Código Postal"
         />
 
@@ -115,13 +115,13 @@
         <label for="Talla">Talla</label>
         <input
           type="text"
-          name="talla"
+          required name="talla"
           placeholder="Ingrese aquí la Talla del zapato que desea"
         />
 
         <br /><br />
 
-        <button type="submit">Confirmar</button>
+        <button type="submit" name="enviar">Confirmar</button>
       </form>
     </div>
   </body>
