@@ -831,3 +831,25 @@ span {
   }
 }
 
+/*Accesibilidad*/
+body {
+  font-size: 16px;
+  transition: font-size 0.2s ease;
+}
+
+#accessibility-controls {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+#accessibility-controls button {
+  font-size: 18px;
+  margin: 0 5px;
+  cursor: pointer;
+}

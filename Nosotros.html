@@ -15,6 +15,10 @@
   </head>
   <body>
     <header>
+      <div id="accessibility-controls">
+        <button onclick="changeFontSize(1)">A+</button>
+        <button onclick="changeFontSize(-1)">A-</button>
+      </div>      
       <div class="menu">
         <img src="Logo Dreyforce.png" class="logo" />
         <nav>
@@ -129,5 +133,16 @@
         </p>
       </div>
     </section>
+    <script>
+      let currentFontSize = 16;
+    
+      function changeFontSize(delta) {
+        currentFontSize += delta;
+        if (currentFontSize < 12) currentFontSize = 12;
+        if (currentFontSize > 30) currentFontSize = 30;
+        document.body.style.fontSize = currentFontSize + "px";
+      }
+    </script>
+    
   </body>
 </html>
